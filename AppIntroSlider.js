@@ -9,6 +9,8 @@ import {
   Platform,
   StatusBar,
 } from 'react-native';
+import PropTypes from 'prop-types'; 
+} from 'react-native';
 import DefaultSlide from './DefaultSlide';
 
 const { width, height } = Dimensions.get('window');
@@ -21,14 +23,7 @@ const isIphoneX = (
 );
 
 export default class AppIntroSlider extends React.Component {
-  static defaultProps = {
-    activeDotColor: 'rgba(255, 255, 255, .9)',
-    dotColor: 'rgba(0, 0, 0, .2)',
-    skipLabel: 'Skip',
-    doneLabel: 'Done',
-    nextLabel: 'Next',
-    prevLabel: 'Back',
-  }
+  
   state = {
     width,
     height,
@@ -166,6 +161,15 @@ export default class AppIntroSlider extends React.Component {
       </View>
     );
   }
+}
+
+AppIntroSlider.defaultProps = {
+    activeDotColor: 'rgba(255, 255, 255, .9)',
+    dotColor: 'rgba(0, 0, 0, .2)',
+    skipLabel: 'Skip',
+    doneLabel: 'Done',
+    nextLabel: 'Next',
+    prevLabel: 'Back'
 }
 
 const styles = StyleSheet.create({
