@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jacse/react-native-app-intro-slider/issues"
   },
-  "homepage": "https://github.com/jacse/react-native-app-intro-slider"
+  "homepage": "https://github.com/jacse/react-native-app-intro-slider",
+   "dependencies": {
+    "prop-types": "^15.6.0"
+  }
 }
